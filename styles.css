@@ -93,4 +93,35 @@ nav a.active {
   margin-bottom: 1rem;
   box-sizing: border-box;
   resize: vertical;
+}html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Le header/menu reste en haut */
+.header {
+  flex-shrink: 0;
+}
+
+/* Le contenu principal (main ou .container) prend toute la hauteur restante */
+main, .container {
+  flex: 1 0 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Centre verticalement */
+  align-items: center;      /* Centre horizontalement */
+}
+
+/* Le footer reste en bas de l’écran */
+.footer {
+  flex-shrink: 0;
+}
+
