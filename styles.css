@@ -183,3 +183,17 @@ main, .container {
     font-size: 1.3rem;
   }
 }
+.container, .cards, .card, main, section, .presta-section {
+  background: rgba(255,255,255,0.97); /* Légère transparence blanche élégante */
+  border-radius: 18px;
+  box-shadow: 0 4px 22px rgba(22,68,122,0.07);
+}
+
+/* Titres, textes principaux et menu */
+h1, h2, h3, .gold, nav a, .btn, .btn-link, .footer {
+  color: #F5CE65 !important;
+}
+
+p, ul, li, .presta-desc {
+  color: #fff;
+}
