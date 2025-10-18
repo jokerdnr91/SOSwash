@@ -12,20 +12,40 @@
     <h1 class="gold">Contact & Réservation</h1>
   </div>
   <nav>
-  <main class="container">
-    <form class="contact-form" onsubmit="return false;">
-      <label for="nom">Votre nom</label>
-      <input type="text" id="nom" name="nom" required />
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required />
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="6" required></textarea>
-      <button class="btn" type="submit" onclick="alert('Merci pour votre message. Nous vous contacterons bientôt !')">Envoyer</button>
-    </form>
+    <a href="index.html">Accueil</a>
+    <a href="canape.html">Canapé</a>
+    <a href="tapis.html">Tapis</a>
+    <a href="vitrerie.html">Vitrerie</a>
+    <a href="voiture.html">Voiture</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+
+  <main 
+  </div>
+<!-- Google Calendar Appointment Scheduling begin -->
+<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+
+<script>
+  (function() {
+    var target = document.currentScript;
+    window.addEventListener('load', function() {
+      calendar.schedulingButton.load({
+        url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3zQbhZWr3heNxD_xqMQ7kOimyWKbTl7vh8SVEpiCDzt-OuIYbkAp7NxTI1lqHzNKOngy_nepeH',
+        color: '#4285F4',
+        label: 'Réserver un rendez-vous',
+        target: target
+      });
+    });
+  })();
+</script>
+<!-- end Google Calendar Appointment Scheduling -->
+      </a>
+    </div>
   </main>
 
   <div class="footer">
-    © 2025 SOS Wash — Service de nettoyage haut de gamme à domicile
+    © 2025 SOS Wash — Luxe & Confiance
   </div>
 
   <script src="scripts.js"></script>
