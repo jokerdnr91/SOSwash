@@ -143,4 +143,44 @@ nav a:hover, nav a.active {
   .header img { height: 54px; }
   h1 { font-size: 1.12rem; }
   .btn, .btn-link { font-size: 0.93rem; padding: 0.6rem 1.1rem; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #19447A;
+}
+
+.sidebar {
+  height: 100vh;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #112E54;
+  padding-top: 40px;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.05);
+  z-index: 1000;
+}
+
+.sidebar a {
+  display: block;
+  color: #fff;
+  padding: 16px 24px;
+  text-decoration: none;
+  font-size: 18px;
+  margin-bottom: 4px;
+  border-radius: 4px 0 0 4px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.sidebar a:hover {
+  background-color: #FFDB4C;
+  color: #19447A;
+}
+
+.main-content {
+  margin-left: 220px; /* largeur du menu + espace */
+  padding: 32px;
+}
+
+
 }
