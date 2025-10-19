@@ -12,21 +12,6 @@ h1, h2, h3, p, label, ul {
   font-style: italic;
   color: #F5CE65;
 }
-
-/* Contenus en box blanche pour lisibilité */
-.container {
-  margin: 2.5rem auto;
-  max-width: 950px;
-  width: 96vw;
-  padding: 2rem 1.2rem;
-  background: #fff;
-  border-radius: 18px;
-  box-shadow: 0 6px 30px rgba(0,0,0,0.10);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .gold {
   color: #F5CE65 !important;
 }
