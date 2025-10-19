@@ -33,17 +33,20 @@
       <br>
       <em> contactez-nous pour un devis. Nous intervenons à domicile ou sur site </em>
     </p>
-    
-    <!-- Bouton Google Agenda -->
-    <div style="margin-top:28px;">
+      
       <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+      
       <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-      <script>
-        (function() {
-          var target = document.currentScript;
-          window.addEventListener('load', function() {
-            calendar.schedulingButton.load({
-              url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3zQbhZWr3heNxD_xqMQ7kOimyWKbTl7vh8SVEpiCDzt-OuIYbkAp7NxTI1lqHzNKOngy_nepeH',
+      
+      <script> (function() {
+          
+      var target = document.currentScript;
+         
+      window.addEventListener('load', function() {
+            
+        calendar.schedulingButton.load({
+              
+          url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3zQbhZWr3heNxD_xqMQ7kOimyWKbTl7vh8SVEpiCDzt-OuIYbkAp7NxTI1lqHzNKOngy_nepeH',
               color: '#16447a33',
               label: 'Réserver un rendez-vous',
               target: target
@@ -51,7 +54,6 @@
           });
         })();
       </script>
-    </div>
   </section>
 
   </main>
