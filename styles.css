@@ -1,146 +1,51 @@
-body {
-  background: #16447A;
-  font-family: 'Playfair Display', serif;
-  color: #16447A;
-  margin: 0;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact – SOS Wash</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="header">
+    <div style="font-size:1.05rem; color:#F5CE65; font-family:'Playfair Display',serif; font-style:italic;">SOS Wash – Luxe & Confiance</div>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="canape.html">Canapé</a>
+      <a href="tapis.html">Tapis</a>
+      <a href="vitrerie.html">Vitrerie</a>
+      <a href="voiture.html">Voiture</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
 
-h1, h2, h3, p, label, ul {
-  font-style: italic;
-  color: #F5CE65;
-}
+  <div class="container">
+    <h2 style="margin-bottom: 1rem;">Contactez-nous</h2>
+    <p>
+      Vous souhaitez réserver une prestation ou avez des questions ?<br>
+      Notre équipe SOS Wash est à votre écoute et vous répond rapidement.
+    </p>
+    <ul style="margin-top:1rem; margin-bottom:1rem; text-align:left;">
+      <li>📞 <span style="color:#F5CE65; font-style:italic;">Téléphone :</span>
+        <a href="tel:0759826493" style="color:#16447A; text-decoration: underline;">07.59.82.64.93</a> | <a href="tel:0780548992" style="color:#16447A; text-decoration: underline;">07.80.54.89.92</a>
+      </li>
+      <li>📧 <span style="color:#F5CE65; font-style:italic;">Email :</span>
+        <a href="mailto:soswash17@gmail.com" style="color:#16447A;">soswash17@gmail.com</a>
+      </li>
+      <li>📱 <span style="color:#F5CE65; font-style:italic;">Instagram :</span>
+        <a href="https://www.instagram.com/soswash_saintes?igsh=MTVqdDlkbnhwZmM5eg%3D%3D&utm_source=qr" target="_blank" style="color:#16447A;">@soswash</a>
+      </li>
+    </ul>
+    <p style="font-style:italic;margin-bottom:1rem;">
+      Remplissez le formulaire ou contactez-nous pour un devis. Nous intervenons à domicile ou sur site !
+    </p>
+    <a class="btn" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3zQbhZWr3heNxD_xqMQ7kOimyWKbTl7vh8SVEpiCDzt-OuIYbkAp7NxTI1lqHzNKOngy_nepeH" target="_blank">
+      Réserver un rendez-vous
+    </a>
+  </div>
 
-/* Contenus en box blanche pour lisibilité */
-.container {
-  margin: 2.5rem auto;
-  max-width: 950px;
-  width: 96vw;
-  padding: 2rem 1.2rem;
-  background: #fff;
-  border-radius: 18px;
-  box-shadow: 0 6px 30px rgba(0,0,0,0.10);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.gold {
-  color: #F5CE65 !important;
-}
-
-.header, .footer {
-  background: linear-gradient(90deg, #16447A 85%, #F5CE65 100%);
-  padding: 2rem 0 1rem 0;
-  text-align: center;
-  color: #fff;
-}
-
-.header img {
-  height: 78px;
-}
-
-nav {
-  background: #16447A;
-  text-align: center;
-  padding: 1rem 0 0.7rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 1rem;
-  font-style: italic;
-  font-size: 1.22rem;
-  transition: color 0.3s;
-  padding-bottom: 0.15rem;
-  border-bottom: 2px solid transparent;
-}
-nav a:hover, nav a.active {
-  color: #F5CE65;
-  border-bottom: 2px solid #F5CE65;
-  font-weight: bold;
-}
-
-.btn, .btn-link {
-  background: #16447A;
-  color: #fff;
-  border: 2px solid #F5CE65;
-  border-radius: 10px;
-  padding: 0.7rem 2rem;
-  font-style: italic;
-  font-size: 1.12rem;
-  cursor: pointer;
-  margin: 1.2rem 0.5rem 0 0;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  display: inline-block;
-}
-.btn:hover, .btn-link:hover {
-  background: #fff;
-  color: #F5CE65;
-  border-color: #16447A;
-}
-
-.service-icon {
-  height: 75px;
-  margin-bottom: 0.5rem;
-  border-radius: 50%;
-  background: #fff;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 8px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  border: 1.5px solid #F5CE65;
-  border-radius: 8px;
-  padding: 0.7rem;
-  width: 100%;
-  margin-bottom: 1.2rem;
-  box-sizing: border-box;
-  resize: vertical;
-  background: #fff;
-  color: #16447A;
-  font-size: 1.08rem;
-}
-
-.footer {
-  flex-shrink: 0;
-  padding: 2rem 0 0.7rem 0;
-  color: #fff;
-  font-size: 1.07rem;
-  text-align: center;
-  font-style: italic;
-  margin-top: auto;
-}
-
-/* Responsive smartphone/tablette */
-@media (max-width: 820px) {
-  .container {
-    max-width: 97vw;
-    padding: 1.2rem 0.45rem;
-  }
-  h1 { font-size: 1.25rem; }
-  nav a { font-size: 1.02rem; }
-  .btn, .btn-link { font-size: 1rem; }
-}
-
-@media (max-width: 500px) {
-  .container {
-    padding: 0.8rem 0.15rem;
-    max-width: 99vw;
-  }
-  .header img { height: 54px; }
-  h1 { font-size: 1.12rem; }
-  .btn, .btn-link { font-size: 0.93rem; padding: 0.6rem 1.1rem; }
-}
+  <div class="footer">
+    © 2025 SOS Wash — Luxe & Confiance
+  </div>
+</body>
+</html>
