@@ -7,16 +7,11 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- HEADER + LOGO -->
-  <div class="header" style="text-align:center; margin-bottom:2rem;">
-    <h1 style="color:#16447A; font-family:'Playfair Display',serif; font-style:italic;">Contact & Réservation</h1>
-    <div class="intro-text" style="font-size:1.13rem; color:#16447A; font-style:italic;">
-      SOS Wash – Luxe & Confiance
-    </div>
+  <div class="header">
+    <img src="logo_soswash.png" alt="Logo SOS Wash" style="height:90px;" />
+    <h1 class="gold">Contact & Réservation</h1>
   </div>
-
-  <!-- NAVIGATION -->
-  <nav class="main-nav" style="text-align:center; margin-bottom:2rem;">
+  <nav>
     <a href="index.html">Accueil</a>
     <a href="canape.html">Canapé</a>
     <a href="tapis.html">Tapis</a>
@@ -25,8 +20,8 @@
     <a href="contact.html" class="active">Contact</a>
   </nav>
 
-  <!-- SECTION CONTACT -->
-  <section class="contact-section" style="max-width:570px; margin:32px auto; background:#fff; border-radius:18px; box-shadow:0 2px 12px #16447a33; padding:2.2rem;">
+  <main class="container">
+    <section class="contact-section" style="max-width:570px; margin:32px auto; background:#fff; border-radius:18px; box-shadow:0 2px 12px #16447a33; padding:2.2rem;">
     <h2 style="color:#16447A;">Contactez-nous</h2>
     <p style="font-size:1.08rem;">
       Vous souhaitez réserver une prestation ou avez des questions&nbsp;?<br>
@@ -36,7 +31,7 @@
       📧 <strong>Email&nbsp;:</strong> soswash17@gmail.com<br>
       📱 <strong>Instagram&nbsp;:</strong> <a href="https://www.instagram.com/soswash_saintes?igsh=MTVqdDlkbnhwZmM5eg%3D%3D&utm_source=qr" target="_blank">@soswash</a><br>
       <br>
-      <em>Remplissez le formulaire ou contactez-nous pour un devis. Nous intervenons à domicile ou sur site !</em>
+      <em> contactez-nous pour un devis. Nous intervenons à domicile ou sur site Profe</em>
     </p>
     
     <!-- Bouton Google Agenda -->
@@ -49,7 +44,7 @@
           window.addEventListener('load', function() {
             calendar.schedulingButton.load({
               url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3zQbhZWr3heNxD_xqMQ7kOimyWKbTl7vh8SVEpiCDzt-OuIYbkAp7NxTI1lqHzNKOngy_nepeH',
-              color: '#4285F4',
+              color: '#16447a33',
               label: 'Réserver un rendez-vous',
               target: target
             });
@@ -59,10 +54,12 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <div class="footer" style="text-align:center; color:#16447A; margin-top:44px;">
+  </main>
+
+  <div class="footer">
     © 2025 SOS Wash — Luxe & Confiance
   </div>
+
   <script src="scripts.js"></script>
 </body>
 </html>
